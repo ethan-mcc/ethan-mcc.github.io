@@ -1,3 +1,4 @@
+<!--Ethan McCaskey 10/11/2022-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,43 +7,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan McCaskey Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="src/styles.css">
+    <!--CDN Content Delivery Network for icons-->
+    <script src="https://kit.fontawesome.com/5f6e548e40.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <ul>
-        <li><a class="selected" href="#home">Home</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+    <!--Nav bar-->
+    <nav>
+    <ul class ="nav">
+        <li><a class="selected" href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#about">Contact</a></li>
     </ul>
-    <div class="pageHeader">
-        <div class="headerText">
+    </nav>
+
+    <!--Main text in center of screen-->
+    <div class="page-header">
+        <div class="header-text">
             <h1>Ethan McCaskey</h1>
             <h3>Software Developer</h3>
         </div>
     </div>
 
+    <!--About Section-->
     <section class="about">
-        <div class="container">
-            <h1>About</h1>
-            <p>
-                I am a undergraduate developer, I know Python, C#, Java, Kotlin. I have experience with relational database systems on applications on a wide varity of operating systems.
-            </p>
+        <h1>Summary</h1>
+        <p>
+            I am a undergraduate developer, I know Python, C#, Java, Kotlin. I have experience with relational
+            database systems on applications on a wide variety of operating systems.
+        </p>
         </div>
     </section>
 
-    <hr>
+    <!--Experience Section-->
+    <section class="experience">
+        <!--Label-->
+        <div class="label">Experience</h2>
+        </div>
 
-    <section class ="video">
-        <div class ="container">
-            <video width="1240" height="720" controls>
-                <source src="Test.m4v" type="video/mp4">
-              Not supported.
-              </video>
-              Creative Commons Attribution license (reuse allowed) <a href="https://www.youtube.com/watch?v=js1qFM7ZfmQ">Source</a>
+        <!--FLEX BOX container-->
+        <div class="container-row">
+
+            <!--Item: icon's stacked with the information below-->
+            <div class="item">
+                <span class="fa-stack fa-4x">
+                    <!--Circle icon with desktop-->
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-desktop fa-stack-1x"></i>
+                </span>
+                <!--Category-->
+                <h4>
+                    Desktop Development
+                </h4>
+                <!--Languages and frameworks-->
+                <p>C#, Java, Python, Electron</p>
+            </div>
+
+             <!--Item: icon's stacked with the information below-->
+            <div class="item">
+                <span class="fa-stack fa-4x">
+                    <!--Circle icon with mobile phone-->
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-mobile fa-stack-1x"></i>
+                </span>
+                <!--Category-->
+                <h4>
+                    Mobile Development
+                </h4>
+                <!--Languages-->
+                <p>Kotlin & Java</p>
+            </div>
+
+             <!--Item: icon's stacked with the information below-->
+            <div class="item">
+                <span class="fa-stack fa-4x">
+                    <!--Circle icon with gamepad-->
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-gamepad fa-stack-1x"></i>
+                </span>
+                <!--Category-->
+                <h4>
+                    Game Development
+                </h4>
+                <!--Engines & applications-->
+                <p>Unity & Blender</p>
+            </div>
+
+             <!--Item: icon's stacked with the information below-->
+            <div class="item">
+                <span class="fa-stack fa-4x">
+                    <!--Circle icon with </> represents markdown-->
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-code fa-stack-1x"></i>
+                </span>
+                <!--Category-->
+                <h4>
+                    Misc
+                </h4>
+                <!--Languages, virtual environment, kernals-->
+                <p>C++, C, SQL, Docker, Linux</p>
+            </div>
+
+
         </div>
     </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <h2>Ethan McCaskey - Software Developer</h2>
+            <!--Github icon with the text "Github" next to it, links to my current github profile page.-->
+            <a href="https://github.com/ethan-mcc">
+                <i class="fa-brands fa-github fa-2x"> Github </i>
+            </a>
+            <br>
+            <!--Contact link, doesn't work if you don't have a default mail setup.-->
+            <a href="mailto:ethanmccaskey2@gmail.com?subject = Feedback&body = Message">
+                Email Me 😊
+            </a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

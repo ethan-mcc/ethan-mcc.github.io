@@ -1,0 +1,73 @@
+<!--Ethan McCaskey 10/11/2022-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan McCaskey Project</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <!--CDN Content Delivery Network for icons-->
+    <script src="https://kit.fontawesome.com/5f6e548e40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Nav bar-->
+    <nav>
+        <ul class="nav">
+            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-text">
+        <h1>Portfolio</h1>
+    </div>
+
+
+    <section>
+        <center>
+            <!--This image map only works on a desktop that is greater than 750px
+            because the image map itself will not scale with the size of the display-->
+            <div class="imagemap"><img id="map" src="imgs/compphone.png" width=1150px height=auto
+                    alt="Computer and phone, you can click them to open a box to describe what I have made."
+                    usemap="#portfolioworkmap">
+            </div>
+            <!--Only show if the display on the browser is other 750px, the MEDIA QUERY then makes the image map below disappear
+                text appears in it's place with the correct links.-->
+            <p class="toosmallmap">This experience is better on desktop! Here is the links I wanted to show :(
+                <a href = "phone.html">Phone</a>
+                <a href = "computer.html">Computer</a>
+            </p>
+        </center>
+
+        <map name="portfolioworkmap">
+            <area shape="circle" coords="620, 500, 150" alt="phone" href="phone.html">
+            <area shape="circle" coords="120, 500, 150" alt="phone" href="computer.html">
+        </map>
+    </section>
+
+    <hr>
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <h2>Ethan McCaskey - Software Developer</h2>
+            <!--Github icon with the text "Github" next to it, links to my current github profile page.-->
+            <a href="https://github.com/ethan-mcc">
+                <i class="fa-brands fa-github fa-2x"> Github </i>
+            </a>
+            <br>
+            <!--Contact link, doesn't work if you don't have a default mail setup.-->
+            <a href="mailto:ethanmccaskey2@gmail.com?subject = Feedback&body = Message">
+                Email Me 😊
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
