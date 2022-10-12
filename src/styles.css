@@ -177,3 +177,18 @@ li a:hover:not(.active) {
         display: contents;
     }
   }
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+  
+  td, th {
+    border: 1px solid rgb(196, 190, 255);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(196, 190, 255);
+  }
