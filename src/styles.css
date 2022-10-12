@@ -42,6 +42,20 @@ li a:hover:not(.active) {
     transition: color 1s cubic-bezier(0.2, 1, 0.2, 1);
 }
 
+.toosmallmap {
+    display: none;
+}
+
+@media (max-width:750px) {
+    img#map {
+        display: none;
+    }
+
+    .toosmallmap {
+        display: contents;
+    }
+}
+
 .page-header {
     background-image: url('../imgs/bg.jpg');
     height: 100%;
@@ -156,39 +170,28 @@ li a:hover:not(.active) {
     padding-right: 20px;
 }
 
-.image-map{
+.image-map {
     width: 1150px;
     height: auto;
-    background-image: url('../imgs/compphone.png');;
+    background-image: url('../imgs/compphone.png');
+    ;
     text-align: center;
     object-fit: cover;
     align-content: center;
 }
 
-.toosmallmap {
-    display: none;
-}
-
-@media (max-width:750px) {
-    img#map {
-      display: none;
-    }
-    .toosmallmap {
-        display: contents;
-    }
-  }
-
 table {
     border-collapse: collapse;
     width: 75%;
 }
-  
-  td, th {
+
+td,
+th {
     border: 1px solid rgb(196, 190, 255);
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: rgb(196, 190, 255);
-  }
+}
