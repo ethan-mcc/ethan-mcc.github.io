@@ -136,6 +136,13 @@ li a:hover:not(.active) {
     text-align: center;
 }
 
+/* Label in the About section on the main page */
+.about .label {
+    font-size: 2em;
+    padding: 50px;
+    text-align: center;
+}
+
 /* FLEX BOX container, column*/
 .container {
     display: flex;
